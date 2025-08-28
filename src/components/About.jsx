@@ -11,11 +11,36 @@ const About = () => {
     config: { tension: 170, friction: 20 },
   });
 
+  // Arrays for different skill categories
+  const programmingLanguages = ["Python", "Java", "C/C++", "SQL", "HTML", "CSS", "JavaScript"];
+  const technicalSkills = [
+    "Microsoft Excel",
+    "Word and PowerPoint",
+    "Data/Business Analysis",
+    "Machine Learning (ML)",
+    "Artificial Intelligence (AI)",
+    "Database Management System (DBMS, MongoDB)",
+    "Operating Systems (OS)",
+    "Git/GitHub",
+    "MySQL",
+    "Full Stack Development",
+  ];
+  const frameworks = ["React.js", "Angular.js", "Node.js", "Tailwind CSS"];
+  const languages = ["English", "Hindi", "French"];
+  const softSkills = [
+    "Strategic Thinking",
+    "Communication Skills",
+    "Problem Solving",
+    "Time Management",
+    "Risk Management",
+    "Team Work",
+  ];
+
   return (
-    <section id="about" className="py-20 bg-gray-950 rounded-3xl ">
-      <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-12">
+    <section id="about" className="py-20 bg-gray-950 rounded-3xl">
+      <div className="container mx-auto px-6 lg:px-20 flex flex-col items-center gap-12">
         
-        {/* Profile Image */}
+        {/* Profile Image on Top */}
         <animated.div
           ref={ref}
           style={animationProps}
@@ -31,53 +56,123 @@ const About = () => {
         </animated.div>
 
         {/* About Text */}
-        <animated.div
-          style={animationProps}
-          className="flex-1 text-center lg:text-left"
-        >
+        <animated.div style={animationProps} className="flex-1 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-fuchsia-400 mb-6">
             About Me
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
+          <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
             Hi, I’m Harsh Bhushan Gupta, a software engineer skilled in front-end
-            development and passionate about combining design with data-driven
-            insights. I enjoy problem-solving, analyzing business aspects, and
+            and full-stack development with a passion for combining design with
+            data-driven insights. I enjoy problem-solving, analyzing business aspects, and
             building impactful applications.
           </p>
 
           {/* Education Section */}
-          <div
-            className="bg-gray-950 backdrop-blur-md 
-                       border border-gray-700/50 rounded-2xl 
-                       p-6 shadow-lg shadow-fuchsia-500/20"
-          >
-            <h3 className="text-2xl font-semibold text-violet-300 mb-4">
-              🎓 Education
-            </h3>
+          <div className="bg-gray-950 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 shadow-lg shadow-fuchsia-500/20 mb-6 text-center">
+            <h3 className="text-2xl font-semibold text-violet-300 mb-4">🎓 Education</h3>
             <ul className="space-y-3 text-gray-300 text-lg">
               <li>
-                <span className="font-bold text-fuchsia-400">
-                  Vellore Institute of Technology, Vellore
-                </span>
-                <br />
-                B.Tech in Information Technology – CGPA :{" "}
-                <span className="font-semibold">8.0</span>
+                <span className="font-bold text-fuchsia-400">Vellore Institute of Technology, Vellore</span>
+                <br /> B.Tech in Information Technology - <span className="font-semibold">8.0 CGPA</span>
               </li>
               <li>
-                <span className="font-bold text-fuchsia-400">
-                  FIITJEE Junior College, Hyderabad
-                </span>
-                <br />
-                Class 12th – <span className="font-semibold">82.6％</span>
+                <span className="font-bold text-fuchsia-400">FIITJEE Junior College, Hyderabad</span>
+                <br /> Class 12th – <span className="font-semibold">82.6％</span>
               </li>
               <li>
-                <span className="font-bold text-fuchsia-400">
-                  Narayana E-techno School, Mumbai
-                </span>
-                <br />
-                Class 10th – <span className="font-semibold">85.6％</span>
+                <span className="font-bold text-fuchsia-400">Narayana E-techno School, Mumbai</span>
+                <br /> Class 10th – <span className="font-semibold">85.6％</span>
               </li>
             </ul>
+          </div>
+
+          {/* Skills Section with mapping logic */}
+          <div className="bg-gray-950 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 shadow-lg shadow-fuchsia-500/20 mb-6 text-center">
+            <h3 className="text-2xl font-semibold text-violet-300 mb-6">💻 Skills</h3>
+
+            {/* Programming Languages */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-fuchsia-400 mb-3">Programming Languages</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {programmingLanguages.map((skill, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-600 hover:text-white transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Technical Skills */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-fuchsia-400 mb-3">Technical Skills</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {technicalSkills.map((skill, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-600 hover:text-white transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Frameworks */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-fuchsia-400 mb-3">Frameworks</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {frameworks.map((fw, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-600 hover:text-white transition"
+                  >
+                    {fw}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Languages */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-fuchsia-400 mb-3">Languages</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {languages.map((lang, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-600 hover:text-white transition"
+                  >
+                    {lang}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Soft Skills */}
+            <div>
+              <h4 className="text-xl font-semibold text-fuchsia-400 mb-3">Soft Skills</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {softSkills.map((skill, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-600 hover:text-white transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Certifications Section */}
+          <div className="bg-gray-950 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 shadow-lg shadow-fuchsia-500/20 text-center">
+            <h3 className="text-2xl font-semibold text-violet-300 mb-4">📜 Certifications</h3>
+            <p className="text-gray-300 text-lg">
+              <span className="font-bold text-fuchsia-400">HackerRank SQL (Intermediate) Certification:</span> 
+              This certification tests advanced SQL skills for database querying and management.
+            </p>
           </div>
         </animated.div>
       </div>

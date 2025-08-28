@@ -8,7 +8,7 @@ const Experiences = () => {
       title: "Software Engineer - Clover Infotech Pvt Ltd.",
       title2: "Hi",
       date: "August, 2025 - Present",
-      description: "Working as a Data Scientist for the client ICICI Bank.",
+      description: "Working as a Software Engineer for the client ICICI Bank in Hyderabad",
       technologies: ["Data Science", "Data Analysis"],
     },
     {
