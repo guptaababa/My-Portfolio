@@ -12,20 +12,19 @@ const About = () => {
   });
 
   // Arrays for different skill categories
-  const programmingLanguages = ["Python", "Java", "C/C++", "SQL", "HTML", "CSS", "JavaScript"];
+  const programmingLanguages = ["Python", "Java", "C/C++", "SQL", "HTML", "CSS", "JavaScript", "Typescript"];
   const technicalSkills = [
-    "Microsoft Excel",
-    "Word and PowerPoint",
+    "Microsoft Suite",
     "Data/Business Analysis",
     "Machine Learning (ML)",
     "Artificial Intelligence (AI)",
     "Database Management System (DBMS, MongoDB)",
-    "Operating Systems (OS)",
+    "System Design",
     "Git/GitHub",
     "MySQL",
-    "Full Stack Development",
+    "Front End Development",
   ];
-  const frameworks = ["React.js", "Angular.js", "Node.js", "Tailwind CSS"];
+  const frameworks = ["React.js", "Angular.js", "Node.js", "Tailwind CSS", "Bootstrap"];
   const languages = ["English", "Hindi", "French"];
   const softSkills = [
     "Strategic Thinking",
@@ -61,8 +60,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
-            Hi, I’m Harsh Bhushan Gupta, a software engineer skilled in front-end
-            and full-stack development with a passion for combining design with
+            Hi, I’m Harsh Bhushan Gupta, a software engineer skilled in front-end development with a passion for combining design with
             data-driven insights. I enjoy problem-solving, analyzing business aspects, and
             building impactful applications.
           </p>
