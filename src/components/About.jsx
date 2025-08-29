@@ -36,7 +36,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-950 rounded-3xl">
+    <section id="about" className="py-10 bg-gray-950 rounded-3xl">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col items-center gap-12">
         
         {/* Profile Image on Top */}
