@@ -1,8 +1,8 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaEye } from "react-icons/fa";
 
-const Hero = ({ setActiveSection }) => {
+const Hero = () => {
   const props = useSpring({
     from: { opacity: 0, transform: "translateY(50px)" },
     to: { opacity: 1, transform: "translateY(0px)" },
@@ -21,9 +21,11 @@ const Hero = ({ setActiveSection }) => {
       style={props}
       className="flex flex-col items-center justify-start min-h-screen text-center px-6 pt-24 sm:pt-32"
     >
-      <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold 
+      <h1
+        className="text-4xl sm:text-6xl md:text-7xl font-extrabold 
                      text-transparent bg-clip-text bg-gradient-to-r 
-                     from-violet-400 to-fuchsia-600 mb-6">
+                     from-violet-400 to-fuchsia-600 mb-6"
+      >
         Hi, I'm Harsh Gupta
       </h1>
 
@@ -35,9 +37,14 @@ const Hero = ({ setActiveSection }) => {
       </animated.p>
 
       <div className="flex space-x-4">
-        <animated.button
-          onClick={() => setActiveSection("experiences")}
-          className="bg-fuchsia-600 hover:bg-fuchsia-700 transition-all duration-300 
+        {/* View Resume Button */}
+        <animated.a
+          href="https://drive.google.com/file/d/1h4CyH6XXjdsf-asL-blIuqOq3OcyMCTm/view?usp=sharing" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-gradient-to-r from-violet-500 to-pink-500
+
+          hover:bg-fuchsia-700 transition-all duration-300 
                      text-white font-semibold py-3 px-6 rounded-full shadow-lg 
                      transform hover:scale-105 hover:shadow-[0_0_15px_4px_rgba(217,70,239,0.6)]"
           style={useSpring({
@@ -46,24 +53,26 @@ const Hero = ({ setActiveSection }) => {
             delay: 800,
           })}
         >
-          View my experiences
-        </animated.button>
+          <FaEye className="text-xl" /> View Resume
+        </animated.a>
 
+        {/* WhatsApp Button */}
         <animated.a
-  href="https://wa.me/919152293824"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 bg-green-600 hover:bg-green-700 transition-all duration-300 
+          href="https://wa.me/919152293824"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-gradient-to-r from-green-700 to-emerald-600
+          hover:bg-green-700 transition-all duration-300 
              text-white font-semibold py-3 px-6 rounded-full shadow-lg 
              transform hover:scale-105 hover:shadow-[0_0_15px_4px_rgba(34,197,94,0.6)]"
-  style={useSpring({
-    from: { opacity: 0, transform: "translateY(20px)" },
-    to: { opacity: 1, transform: "translateY(0px)" },
-    delay: 900,
-  })}
->
-  <FaWhatsapp className="text-xl" /> Contact me
-</animated.a>
+          style={useSpring({
+            from: { opacity: 0, transform: "translateY(20px)" },
+            to: { opacity: 1, transform: "translateY(0px)" },
+            delay: 900,
+          })}
+        >
+          <FaWhatsapp className="text-xl" /> Contact me
+        </animated.a>
       </div>
     </animated.section>
   );

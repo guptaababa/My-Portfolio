@@ -9,7 +9,7 @@ const Experiences = () => {
       title2: "Hi",
       date: "August, 2025 - Present",
       description: "Working as a Software Engineer for the client ICICI Bank in Hyderabad. Working with the frontend team to rectify the bugs in ICICI web application using technologies like React.js",
-      technologies: ["React.js", "Javascript", "Tailwind CSS", ""],
+      technologies: ["React.js", "Javascript", "Tailwind CSS", "HTML"],
     },
     {
       title: "Software Developer Engineer Intern - Softforce Consultants Pvt. Ltd.",
@@ -70,7 +70,8 @@ const ExperienceCard = ({ experience, inView, index }) => {
         {experience.technologies.map((tech, i) => (
           <span
             key={i}
-            className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs font-semibold"
+            className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
+            text-gray-300 px-3 py-1 rounded-full text-s font-semibold"
           >
             {tech}
           </span>

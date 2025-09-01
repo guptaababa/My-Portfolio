@@ -20,8 +20,8 @@ const Header = ({ setActiveSection, activeSection }) => {
             onClick={() => setActiveSection(item.id)}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
               activeSection === item.id
-                ? "bg-fuchsia-600 text-white shadow-md shadow-fuchsia-500/30"
-                : "text-gray-400 hover:text-white hover:bg-gray-800/70"
+                ? "bg-gradient-to-r from-violet-400 to-fuchsia-600 text-white shadow-md shadow-fuchsia-500/30"
+                : "text-gray-400 hover:text-white hover:bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900"
             }`}
           >
             {item.icon}

@@ -31,7 +31,8 @@ const Contact = () => {
       <div className="flex justify-center space-x-10">
         <animated.a
           href="mailto:harshbhushangupta@gmail.com"
-          className="bg-gray-800 text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
+          className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
+          text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
           style={useSpring({
             opacity: inView ? 1 : 0,
             transform: inView ? "scale(1)" : "scale(0.8)",
@@ -44,7 +45,8 @@ const Contact = () => {
           href="https://github.com/guptaababa"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-800 text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
+          className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
+          text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
           style={useSpring({
             opacity: inView ? 1 : 0,
             transform: inView ? "scale(1)" : "scale(0.8)",
@@ -57,7 +59,8 @@ const Contact = () => {
           href="https://www.linkedin.com/in/harsh-gupta-001767216/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-800 text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
+          className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
+          text-gray-300 p-7 rounded-full shadow-2xl transform hover:scale-125 transition-transform duration-300 hover:bg-gray-700"
           style={useSpring({
             opacity: inView ? 1 : 0,
             transform: inView ? "scale(1)" : "scale(0.8)",
