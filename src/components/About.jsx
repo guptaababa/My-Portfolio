@@ -101,7 +101,7 @@ const About = () => {
                   <span
                     key={idx}
                     className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
-                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-gradient-to-r to-fuchsia-600 hover:text-white transition"
+                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-400 hover:text-white transition"
                   >
                     {skill}
                   </span>
@@ -117,7 +117,7 @@ const About = () => {
                   <span
                     key={idx}
                     className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
-                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-gradient-to-r from-violet-400 to-fuchsia-600 hover:text-white transition"
+                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-400 hover:text-white transition"
                   >
                     {skill}
                   </span>
@@ -133,7 +133,7 @@ const About = () => {
                   <span
                     key={idx}
                     className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
-                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-gradient-to-r from-violet-400 to-fuchsia-600 hover:text-white transition"
+                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-400 hover:text-white transition"
                   >
                     {fw}
                   </span>
@@ -149,7 +149,7 @@ const About = () => {
                   <span
                     key={idx}
                     className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
-                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-gradient-to-r from-violet-400 to-fuchsia-600 hover:text-white transition"
+                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-400 hover:text-white transition"
                   >
                     {lang}
                   </span>
@@ -165,7 +165,7 @@ const About = () => {
                   <span
                     key={idx}
                     className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900
-                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-gradient-to-r from-violet-400 to-fuchsia-600 hover:text-white transition"
+                    text-gray-300 px-3 py-1 rounded-full text-sm font-semibold hover:bg-fuchsia-400 hover:text-white transition"
                   >
                     {skill}
                   </span>
