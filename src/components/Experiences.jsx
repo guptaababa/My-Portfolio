@@ -31,7 +31,7 @@ const Experiences = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <animated.section ref={ref} id="experiences" className="py-10">
+    <animated.section ref={ref} id="experiences" className="py-10 ">
       <h2 className="text-4xl sm:text-6xl font-bold text-center mb-12 text-violet-400">
         My Experiences
       </h2>
