@@ -65,7 +65,7 @@ const ExperienceCard = ({ experience, inView, index }) => {
         {experience.title}
       </h3>
       <p className="text-sm text-gray-400 mb-2 italic">{experience.date}</p>
-      <p className="text-gray-300 text-base mb-4">{experience.description}</p>
+      <p className="text-gray-400 text-base mb-4">{experience.description}</p>
       <div className="flex flex-wrap gap-2">
         {experience.technologies.map((tech, i) => (
           <span
