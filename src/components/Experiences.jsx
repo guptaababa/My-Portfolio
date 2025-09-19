@@ -41,7 +41,7 @@ const Experiences = () => {
             key={index}
             experience={exp}
             inView={inView}
-            index={index}
+            index={index}v
           />
         ))}
       </div>
