@@ -56,7 +56,7 @@ const About = () => {
                      shadow-lg shadow-fuchsia-500/20"
         >
           <img
-            src="https://media.licdn.com/dms/image/v2/D5622AQE0VQe7o-bzvQ/feedshare-shrink_1280/B56Zi7ou3DG4Ak-/0/1755494685998?e=1758758400&v=beta&t=4FVaysUfLQtElGEnmc66Df-VMN8_UhR7mVRHziuelT8"
+            src="https://media.licdn.com/dms/image/v2/D5622AQE0VQe7o-bzvQ/feedshare-shrink_1280/B56Zi7ou3DG4Ak-/0/1755494685998?e=1761782400&v=beta&t=FrFtpOjA1PGmcswxKEncxxqq4jibEbwoUW8lohcwqNg"
             alt="Harsh Gupta profile picture"
             className="w-full h-full object-cover rounded-full"
           />
