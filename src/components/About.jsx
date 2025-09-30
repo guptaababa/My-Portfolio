@@ -61,7 +61,7 @@ const About = () => {
             className="w-full h-full object-cover rounded-full"
           />
         </animated.div>
-
+ 
         {/* About Text & Other Sections */}
         <animated.div style={animationProps} className="flex-1 text-center w-full">
           <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
