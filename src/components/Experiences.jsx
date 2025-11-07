@@ -5,25 +5,23 @@ import { useInView } from "react-intersection-observer";
 const Experiences = () => {
   const experiences = [
     {
-      title: "Software Engineer - Clover Infotech Pvt Ltd.",
+      title: "Software Engineer - ICICI Bank / Clover Infotech",
       title2: "Hi",
       date: "August, 2025 - Present",
-      description: "Working as a Software Engineer for the client ICICI Bank in Hyderabad. Working with the frontend team to rectify the bugs in ICICI web application using technologies like React.js",
-      technologies: ["React.js", "Javascript", "Tailwind CSS", "HTML"],
+      description: "Working as a Software Engineer for the client ICICI Bank in Hyderabad. Collaborating with the frontend team to work on the E-procurement site 'iView', using technologies like React.JS and tailwind CSS",
+      technologies: ["React.JS", "Javascript", "Tailwind CSS", "HTML"],
     },
     {
       title: "Software Developer Engineer Intern - Softforce Consultants Pvt. Ltd.",
       date: "September, 2023 - November, 2023",
       description:
-        "Developed and deployed 5+ interactive web applications using HTML, CSS, JavaScript, React, and Node.js. Collaborated with cross-functional teams and utilized SQL and MS Excel for data quality analysis.",
+        "Gained a strong foundation in front-end development and built proficiency in JavaScript, HTML, CSS, and React.JS. Developed multiple web applications and enhanced a local hospital’s main website, resulting in a 20% increase in user engagement.",
       technologies: [
         "HTML",
         "CSS",
         "JavaScript",
         "React.js",
-        "Node.js",
-        "SQL",
-        "MS Excel",
+        "Node.js"
       ],
     },
   ];

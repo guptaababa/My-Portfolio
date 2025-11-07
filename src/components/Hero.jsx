@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="flex space-x-4">
         {/* View Resume Button */}
         <animated.a
-          href="https://drive.google.com/file/d/1bXnj60E6IlASPMr5IUrjq5C9v3DOVzrT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1xg2-Z-E14DhN27RW-qferSmDZS8PfkMU/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-violet-500 to-pink-500

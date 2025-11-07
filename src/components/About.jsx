@@ -24,6 +24,8 @@ const About = () => {
     "Git/GitHub",
     "MySQL",
     "Front End Development",
+    "Redux",
+    "REST API Integration",
   ];
   const frameworks = ["React.js", "Angular.js", "Node.js", "Tailwind CSS", "Bootstrap"];
   const languages = ["English", "Hindi", "French"];
@@ -76,7 +78,7 @@ const About = () => {
             <ul className="space-y-6 text-gray-300 text-lg max-w-2xl mx-auto">
               <li>
                 <span className="font-bold text-fuchsia-400">Vellore Institute of Technology, Vellore</span>
-                <br /> B.Tech in Information Technology - <span className="font-semibold">8.0 CGPA</span>
+                <br /> B.Tech in Information Technology - <span className="font-semibold">7.96 CGPA</span>
               </li>
               <li>
                 <span className="font-bold text-fuchsia-400">FIITJEE Junior College, Hyderabad</span>
