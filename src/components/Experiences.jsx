@@ -8,20 +8,28 @@ const Experiences = () => {
       title: "Software Engineer - ICICI Bank / Clover Infotech",
       title2: "Hi",
       date: "August, 2025 - Present",
-      description: "Working as a Software Engineer for the client ICICI Bank in Hyderabad. Collaborating with the frontend team to work on the E-procurement site 'iView', using technologies like React.JS and tailwind CSS",
-      technologies: ["React.JS", "Javascript", "Tailwind CSS", "HTML"],
+      description: [
+        "Currently deployed at ICICI Bank as Software Engineer 1, working as a front-end developer using technologies like React.js.",
+        "Worked on the E-Procurement application (iView), focusing on improving UI/UX elements and enhancing interface clarity, usability, and user interaction.",
+        "Collaborated on the Asset Tracking System (ATS) integrated with ServiceNow, documenting backend API workflows, overseeing end-to-end project workflow, and assisting in debugging for system reliability.",
+        "Documented and validated form-level behaviors, identified inconsistencies, tested edge cases, and coordinated with the team to resolve issues, improving overall accuracy and usability."
+      ],
+      technologies: ["React.JS", "Node.JS", "Javascript", "Tailwind CSS", "HTML", "Git/GitHub", "RestAPI", "API Testing"],
     },
     {
       title: "Software Developer Engineer Intern - Softforce Consultants Pvt. Ltd.",
       date: "September, 2023 - November, 2023",
-      description:
-        "Gained a strong foundation in front-end development and built proficiency in JavaScript, HTML, CSS, and React.JS. Developed multiple web applications and enhanced a local hospital’s main website, resulting in a 20% increase in user engagement.",
+      description: [
+        "Gained a strong foundation in front-end development and built proficiency in JavaScript, HTML, CSS, and React.JS.",
+        "Developed multiple web applications and enhanced a local hospital’s main website, resulting in a 20% increase in user engagement."
+      ],
       technologies: [
         "HTML",
         "CSS",
         "JavaScript",
         "React.js",
-        "Node.js"
+        "Node.js",
+        "Git/GitHub"
       ],
     },
   ];
@@ -39,7 +47,7 @@ const Experiences = () => {
             key={index}
             experience={exp}
             inView={inView}
-            index={index}v
+            index={index}
           />
         ))}
       </div>
@@ -63,7 +71,19 @@ const ExperienceCard = ({ experience, inView, index }) => {
         {experience.title}
       </h3>
       <p className="text-sm text-gray-400 mb-2 italic">{experience.date}</p>
-      <p className="text-gray-400 text-base mb-4">{experience.description}</p>
+
+      {Array.isArray(experience.description) ? (
+        <ul className="list-disc ml-6 text-gray-400 space-y-2 mb-4">
+          {experience.description.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-gray-400 text-base mb-4">
+          {experience.description}
+        </p>
+      )}
+
       <div className="flex flex-wrap gap-2">
         {experience.technologies.map((tech, i) => (
           <span
